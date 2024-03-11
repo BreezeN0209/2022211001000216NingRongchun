@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>New User Registration!</title>
+    <title>User Registration</title>
     <script>
         function validateForm() {
             var username = document.getElementById("username").value;
@@ -47,7 +47,7 @@
     </script>
 </head>
 <body>
-<h2>New User Registration!</h2>
+<h2>User Registration</h2>
 <form onsubmit="return validateForm()">
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" required><br><br>
@@ -61,7 +61,14 @@
     <label for="birthdate">Birthdate:</label>
     <input type="text" id="birthdate" name="birthdate" placeholder="YYYY-MM-DD" required><br><br>
 
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
     <input type="submit" value="Register">
 </form>
 </body>
 </html>
+
